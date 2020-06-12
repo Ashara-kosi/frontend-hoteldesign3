@@ -1,6 +1,6 @@
 /* Header> NAv */
 .landingpage-header-logo {
-  font-family: 'Roboto' sans-serif;
+  /* font-family: 'Roboto' sans-serif; */
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -8,7 +8,7 @@
   color: #144673;
 }
 .class-home {
-  font-family: 'Roboto' sans-serif;
+  /* font-family: 'Roboto' sans-serif; */
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -87,7 +87,7 @@ button {
   position: relative;
 }
 .stacktext {
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-style: normal;
   font-weight: normal;
   color: #444444;
@@ -114,7 +114,7 @@ button {
 }
 
 .feedbacks {
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-style: italic;
   font-weight: 300;
   font-size: 18px;
@@ -135,7 +135,7 @@ button {
   border: hidden;
 }
 .card-text {
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -144,7 +144,7 @@ button {
 }
 
 .card-title {
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -158,7 +158,7 @@ button {
   padding: 30px;
 }
 .card-head {
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-style: normal;
   font-weight: 700;
   font-size: 28px;

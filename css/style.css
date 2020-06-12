@@ -1,9 +1,9 @@
-html {
-  font-family: 'Roboto' sans-serif;
+* {
+  font-family: 'Roboto' !important;
 }
 
 .landingpage-header-logo {
-  font-family: 'Roboto' sans-serif;
+  /* font-family: 'Roboto' sans-serif; */
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -11,7 +11,7 @@ html {
   color: #144673;
 }
 .class-home {
-  font-family: 'Roboto' sans-serif;
+  /* font-family: 'Roboto' sans-serif; */
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -19,7 +19,7 @@ html {
   color: #1a6fbc;
 }
 .class-room {
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -27,7 +27,7 @@ html {
   color: #1a6fbc;
 }
 .class-fac {
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -35,7 +35,7 @@ html {
   color: #1a6fbc;
 }
 .class-contact {
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -57,7 +57,7 @@ html {
   font-size: 1.3vw;
   padding-top: 5%;
   letter-spacing: 0.7px;
-  font-family: Roboto;
+  /* font-family: Roboto; */
 }
 
 .col {
@@ -111,7 +111,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-style: normal;
 }
 
