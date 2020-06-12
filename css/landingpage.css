@@ -43,12 +43,17 @@
   color: #144673;
 }
 
+.homepage {
+  position: relative;
+}
+
 /* CAROUSEL  */
 .bookingInput {
   position: absolute;
-  left: 45px;
+  margin: 0 65px;
   z-index: 10;
   background: #144673;
+  padding: 0.5rem 1rem;
 }
 
 .inputBorder {
@@ -57,6 +62,9 @@
   border-left: none;
   background: #144673;
   color: white;
+  border-radius: unset;
+  margin-right: 10px;
+  min-width: 100px;
 }
 
 .carousel-inner img {
@@ -86,6 +94,13 @@ button {
 .stackSection {
   position: relative;
 }
+.stackSection h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.stackSection p {
+  margin-bottom: 0;
+}
 .stacktext {
   /* font-family: Roboto; */
   font-style: normal;
@@ -113,6 +128,10 @@ button {
   grid-column: 3/5;
 }
 
+.deals {
+  margin-top: 50px;
+}
+
 .feedbacks {
   /* font-family: Roboto; */
   font-style: italic;
@@ -126,9 +145,13 @@ button {
 .specialoffer {
   background-color: #d9d6d6;
   background-size: cover;
-  height: 636px;
   /* position: absolute; */
   overflow-x: hidden;
+}
+.specialoffer .card-head {
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: -30px;
 }
 .card {
   margin: 30px;
@@ -197,6 +220,11 @@ button {
   padding: 7px 15px;
 }
 
+.inputparent {
+  position: relative;
+  margin-right: 10px;
+}
+
 .pa2 input:focus,
 .pa2 select:focus {
   background-color: transparent;
@@ -215,6 +243,10 @@ button {
 .pa2 svg {
   color: white;
   margin-top: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* bottom: 0; */
 }
 
 .pa2 input[type='submit'] {
@@ -225,6 +257,7 @@ button {
   background-color: transparent !important;
   color: white;
   padding: 3px 20px;
+  margin: 0 0 0 10px !important;
 }
 
 .pa2 {
@@ -252,11 +285,79 @@ button {
 
 .carousel-caption button {
   border: none;
-  padding: 0 15px;
+  padding: 7px 15px;
   min-width: 160px;
   white-space: nowrap;
+  cursor: pointer;
 }
 .carousel-caption .bg-info {
   background-color: rgb(20, 70, 115) !important;
   color: white;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: unset;
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  background-color: rgb(20, 70, 115);
+}
+
+.carousel-caption {
+  top: 50%;
+  bottom: unset;
+  transform: translateY(-50%);
+}
+
+.happyclients {
+  position: relative;
+  width: 40%;
+  margin: 50px auto;
+}
+
+.happyclients .comma {
+  position: absolute;
+  top: 50px;
+  right: -100px;
+}
+.happy .left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.happy .right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.happy {
+  position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .homepage {
+    position: unset;
+  }
+  .bookingInput {
+    position: relative;
+    margin: 0;
+  }
+  .happyclients {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel-caption .bg-info {
+    margin-bottom: 10px;
+  }
+  .deals {
+    margin-top: -150px;
+  }
+  .happyclients {
+    width: 80%;
+  }
 }
