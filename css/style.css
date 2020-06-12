@@ -1,5 +1,12 @@
 * {
-  font-family: 'Roboto' !important;
+  font-family: 'Roboto';
+}
+
+a {
+  color: inherit !important;
+}
+a:hover {
+  text-decoration: none !important;
 }
 
 .landingpage-header-logo {
@@ -246,6 +253,19 @@ textarea {
   width: 100%;
 }
 
+.required .inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.required .inputs > div input:last-child {
+  margin-left: 10px;
+}
+
+.required .inputs input {
+  width: 100%;
+}
+
 @keyframes shake {
   10%,
   90% {
@@ -293,7 +313,7 @@ button {
 
 .required div {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .inline {
@@ -304,6 +324,10 @@ button {
 
 i {
   padding: 10px;
+}
+
+aside {
+  margin-top: 50px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -325,6 +349,18 @@ i {
 
   input {
     width: 100%;
+  }
+
+  .required .inputs > div input:last-child {
+    margin-left: unset;
+  }
+
+  aside {
+    margin-top: unset;
+    text-align: center;
+  }
+  aside .inline {
+    justify-content: center;
   }
 }
 
