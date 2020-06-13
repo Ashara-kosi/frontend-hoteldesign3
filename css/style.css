@@ -53,10 +53,10 @@ a:hover {
   color: #144673;
 }
 
-@font-face {
+/* @font-face {
   font-family: Roboto;
   src: url(fonts/RobotoSlab-Regular.ttf);
-}
+} */
 
 #footer {
   background: #144673;

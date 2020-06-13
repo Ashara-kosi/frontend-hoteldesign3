@@ -1,0 +1,50 @@
+.harmburger {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.closee {
+  font-size: 3rem;
+  color: grey;
+}
+
+.dash {
+  height: 3px;
+  width: 20px;
+  background-color: black;
+  margin-bottom: 3px;
+}
+
+.harmburgermenu {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 15;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+@media only screen and (max-width: 415px) {
+  nav {
+    display: none !important;
+  }
+  .harmburger {
+    display: block;
+  }
+  .harmburgermenu .nav-link {
+    font-size: 2rem;
+    color: grey !important;
+  }
+  header {
+    position: relative;
+  }
+}
