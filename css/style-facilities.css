@@ -2,17 +2,19 @@
     padding: 0;
     margin: 0;
 }
+.contain{
+    padding-left: 7.175%;
+    padding-right: 7.175%;
+}
 body {
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
     
 }
 #double-room-book-rooms{
     display: grid;
     grid-column-gap: 10px;
-    grid-template-columns: 75% 25%;
-    /* padding-left: 80px;
-    padding-right: 80px; */
-    font-family: 'Roboto', sans-serif;
+    grid-template-columns: 72.08% 26.7%;
     padding-top: 50px;
 }
 #double-room{
@@ -26,6 +28,8 @@ body {
 #form-book-rooms{
     background-color: #FAFDFF;
     padding: 10px 20px 60px 20px;
+    width: 275px;
+    height: 465px;
 }
 #top{
     display: grid;
@@ -64,6 +68,8 @@ body {
     border-radius: 10px;
     border-width: 1px;
     outline: none;
+    border-color: black;
+    color: black;
 }
 #book:hover{
     background-color: black;
@@ -79,6 +85,9 @@ body {
     margin-top: -15px;
 }
 .hidden{
+    display: none;
+}
+#break{
     display: none;
 }
 @media only screen and (max-width: 1243px) {
@@ -97,26 +106,54 @@ body {
     .num{
         width: 98%;
     }
+    #double-room-book-rooms{
+        grid-template-columns: 63.08% 21.7%;
+    }
 }
 
 @media only screen and (max-width: 902px) {
     #top{
         grid-template-columns: 78% 17%;
     }
+    #double-room-book-rooms{
+        grid-template-columns: 56.08% 11.7%;
+    }
+   
 }
+/*
+@media only screen and (max-width: 700px) {
+    #top{
+        grid-template-columns: 78% 17%;
+    }
+    #double-room-book-rooms{
+        grid-template-columns: 53.08% 11.7%;
+    }
+    #form-book-rooms{
+        width: 200px;
+    }
+}*/
 
-@media only screen and (max-width: 733px) {
+@media only screen and (max-width: 700px) {
     #double-room-book-rooms{
         display: block;
     }
     .hidden{
         display: none;
     }
+    #break{
+        display: inline;
+    }
     .num{
         width: 45.9%;
     }
     #top{
         grid-template-columns: 80% 20%;
+    }
+    .bre{
+        padding-top: 100px;
+    }
+    .bel{
+        padding-bottom: 25px;
     }
 }
 @media only screen and (max-width: 733px) {
@@ -138,6 +175,8 @@ body {
 
     .more-images {
        flex-wrap: wrap;
+       display: flex;
+       width: 100%;
     }
  
     .more-images img {
@@ -146,11 +185,11 @@ body {
  
     
     [fifth-image] {
-       width: 196px;
+       width: 78px;
     }
  
     .customer-review-section {
-        margin-left: 30px ;
+        
     }
 
     @media only screen and (max-width: 1028px) {
@@ -172,9 +211,6 @@ body {
         display: flex;
         margin-bottom: 90px;
     }
-    .more-images {
-        display: flex;
-    }
 
     [fifth-image] {
         width: 80px;
@@ -182,15 +218,17 @@ body {
     
     .more-images img {
         height: 140px;
-        padding-right: 6.6px;
+        padding-right: 3.8px;
         margin-bottom: 77px;
     }
     
     .customer-review-section {
         width: 275px;
         height: 465px;
-        margin-left: 20px;
+        margin-left: 10px;
+        
     }
+
     
     #customer-review-header {
         font-size: 28px;
@@ -232,7 +270,7 @@ body {
     }
  
     .more-images img {
-       padding-left: 20px;
+       
        margin-bottom: 12px;
     }
  
@@ -298,19 +336,25 @@ body {
     padding-left: 2rem;
     border-top: 1px solid rgba(0,0,0,.1);
     border-bottom: 1px solid rgba(0,0,0,.1);
-    width: 825px ;
+    width: 100% ;
     padding-top: 25px;
     padding-bottom: 25px;
+    
 }
+/* */
 .iconsection{
     margin-bottom: 3%;
     margin-top: 3%;
     width: 25%;
 }
+@media screen and (max-width: 1071px) {
+     .iconsection {
+        width: 50%;
+    }
+}
+/*
 @media screen and (max-width: 48rem) {
     .iconsection {
-        margin-bottom: 3%;
-        margin-top: 3%;
         width: 100%;
     }
     .roomfacility{
@@ -328,10 +372,10 @@ body {
         font-size: 16px;
     }
 }
-
+*/
 
 span{
-font-family: Roboto;
+
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
@@ -340,7 +384,7 @@ padding: 0.5rem;
 }
 
 p{
-    font-family: Roboto;
+   
     font-style: normal;
     font-weight: 500;
     font-size: 1.4vw;
@@ -368,51 +412,105 @@ p{
     margin-bottom: 17px;
 }
 
-.elegant {
-    margin-top: 10px;
+.cards{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    margin-bottom: 80px;
+    }
+
+.read{
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 50px;
 }
 
-.personal {
-    margin-top: 10px;
+.read-text{
+    display: flex;
+    justify-content: space-between;
 }
+ 
+.read-text{
+    display: flex;
+    justify-content: space-between;
+  }
+  .book{
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .read img{
+    width: 250px;
+    height: 190px;
+    margin-bottom:25px;
+  }
 
-.presidential {
-    margin-top: 10px;
-}
+  .read-text p {
+    font-size: 1.3vw;
+    max-width: 374px;
+  }
+   
+  .read-text a{
+    color: rgb(0, 0, 250);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid rgb(0, 0, 250);
+    padding: 8px 20px;
+    border-radius: 5px;
+  }
 
-.butto1 {
-    width: 71px;
-    height: 34px;
-    text-align-last: center;
-}
-
-.butto2 {
-    width: 71px;
-    height: 34px;
-    text-align-last: center;
-    padding-left: 25px;
-}
-
-.butto3 {
-    width: 75px;
-    height: 34px;
-    text-align-last: center;
-    text-align: center;
-    line-height: unset;
-}
-
-.you {
+  .read-text a:hover {
+      text-decoration: none;
+      background: rgb(0, 0, 250); 
+      color: white;
+  }
+  
+  .read-text h5{
+    font-size: 14px;
+    margin-bottom:0;
+  }
+  
+   
+  @media (max-width:800px){
+  
+    .rooms{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .content h2{
+        font-size: 17px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .cards{
+        grid-template-columns: 1fr ;
+        grid-row-gap: 30px;
+        margin: 40px;
+    }
+    .you {
     margin-bottom: 200px;
     margin-left: 0px;
     padding-left: 17px;
+} }
+
+
+
+
+.clas{
+    margin-bottom: 55px;
 }
 
 /* */
 
-@font-face{
-    font-family: Roboto;
-    src: url(RobotoSlab-Regular.ttf);
-   }
+
    
    
    #footer{background: #144673;
@@ -420,7 +518,7 @@ p{
        font-size:1.3vw;
        padding-top: 5%;
        letter-spacing: 0.7px;
-       font-family: Roboto;
+       
       
    }
    
@@ -472,4 +570,4 @@ p{
     #footer{
      font-size:2vw;
     }
-   }
+}
